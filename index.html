@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Dashboard</title>
+    <script
+      src="https://kit.fontawesome.com/274710795e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="left-nav">
+        <a href="/" class="title">Crypto Tracker</a>
+      </div>
+      <div class="right-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="./favorite/favourite.html" class="nav-link">Favorites</a>
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="search-box" placeholder="Search..." />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <table id="crypto-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>
+              Price
+              <i class="fa-solid fa-arrow-up" id="sort-price-asc"></i>
+              <i class="fa-solid fa-arrow-down" id="sort-price-dsc"></i>
+            </th>
+            <th>
+              Volume
+              <i class="fa-solid fa-arrow-up" id="sort-volume-asc"></i>
+              <i class="fa-solid fa-arrow-down" id="sort-volume-dsc"></i>
+            </th>
+            <th>
+              Market Cap
+              <i class="fa-solid fa-arrow-up" id="sort-market-asc"></i>
+              <i class="fa-solid fa-arrow-down" id="sort-market-dsc"></i>
+            </th>
+            <th>Favorite</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <section id="pagination-controls">
+        <button id="prev-button">Prev</button>
+        <button id="next-button">Next</button>
+      </section>
+      <section id="loader-container">
+        <div class="loader"></div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
